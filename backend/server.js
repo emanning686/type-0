@@ -15,7 +15,7 @@ env.config();
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api/:pin", async (req, res) => {
+app.post("/api/:pin", async (req, res) => {
   console.log(req.params.pin);
   try {
     let pin = req.params.pin;
