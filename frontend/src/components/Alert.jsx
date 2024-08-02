@@ -63,8 +63,8 @@ const Alert = (props) => {
         <h1
           className={
             quantity > 1
-              ? "text-lg font-semibold text-[#602c2c] md:text-3xl"
-              : "text-lg font-semibold text-[#25562e] md:text-3xl"
+              ? "font-inter text-lg font-semibold text-[#602c2c] md:text-3xl"
+              : "font-inter text-lg font-semibold text-[#25562e] md:text-3xl"
           }
         >
           {quantity > 1 ? "Oops!" : "Good Find!"}
@@ -72,8 +72,8 @@ const Alert = (props) => {
         <h1
           className={
             quantity > 1
-              ? "text-base font-medium text-[#884b2b] md:text-xl"
-              : "text-base font-medium text-[#468232] md:text-xl"
+              ? "font-inter text-base font-medium text-[#884b2b] md:text-xl"
+              : "font-inter text-base font-medium text-[#468232] md:text-xl"
           }
         >
           {quantity > 1
