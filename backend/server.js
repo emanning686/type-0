@@ -12,6 +12,10 @@ env.config();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get("/api/ping", (req, res) => {
+  res.json({ message: "ping successful" });
+});
+
 app.post("/api/:pin", async (req, res) => {
   console.log(req.params.pin);
   try {
