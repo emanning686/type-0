@@ -25,7 +25,9 @@ function App() {
     let currPin = pin;
     setPin("");
     if (currPin.length === 4) {
-      let response = await axios.post(`/api/${currPin}`);
+      let response = await axios.post(
+        `https://type-0.onrender.com/api/${currPin}`,
+      );
       setAlerts([
         ...alerts,
         <Alert
