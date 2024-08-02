@@ -31,8 +31,8 @@ function App() {
       setAlerts([
         ...alerts,
         <Alert
-          key={currPin + response.quantity}
-          quantity={response.quantity}
+          key={currPin + response.data.quantity}
+          quantity={response.data.quantity}
           pin={currPin}
           setAlerts={setAlerts}
         />,
