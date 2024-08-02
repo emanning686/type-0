@@ -8,7 +8,7 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 8080;
 const corsOptions = {
-  origin: "localhost",
+  origin: "https://type-0.netlify.app/",
 };
 env.config();
 
